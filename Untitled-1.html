@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+      *{
+          direction: rtl;
+          font-family: vazir;
+      }
+      #tab-title{
+          border:solid 1px #e6e6e6;
+          border-radius:6px;
+          padding-top: 20px;
+      } 
+      #tab-title ul li{
+          display: inline-block;
+          border:solid 1px #e6e6e6;
+          border-radius:4px;
+          width:89px;
+          height: 28px;
+          vertical-align: middle;
+          text-align: center;
+          line-height: 28px;
+
+      }
+      #tab-title ul li a{
+          text-decoration:none;
+          color:#404040;
+          font-family: Vazir;
+          
+      }
+      #tab-title ul li.active{
+          background-color: #BD272D;
+          
+
+      }
+      #tab-title ul li.active a{
+        color: #fff;
+      }
+      #tab-title h3{
+          display: inline-block;
+          padding: 0;
+          margin: 0;
+      }
+      #tab-title img{
+          margin-right:40px;
+      }
+      .tab-doc{
+        border:solid 1px #e6e6e6;
+        border-radius:6px;
+       margin-top: 20px;
+       display: flex;
+       justify-content: flex-start;
+      }
+      .tab-doc-img{
+          width:40%;
+          display: flex;
+            
+      }
+      .tab-doc-img img{
+        border-radius: 4px;
+        margin:5px;
+      }
+      .tab-doc-img h4{
+        width:20%;
+      }
+      .img-title{
+        width: 100px;
+        padding:5px 10px;
+        background-color: #BD272D;
+        height:40px;
+        line-height: 40px;
+        text-align: center;
+        position: relative;
+        left:30%;
+        top:120px;
+        border-radius: 4px;
+      }
+      .tab-doc-con{
+          width:60%;
+          margin-right:-5%;
+      }
+      .dott{
+        color: #BD272D;
+        font-size: 50px;
+      }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("#tabs").find("li").click(function(){
+        $(this).addClass("active").siblings("li").removeClass("active");
+      });
+    });
+  </script>
+</head>
+<body>
+ 
+<div id="tabs">
+    <div id="tab-title">
+        <img src="Frame 43.jpg">
+        <h3>فیلتر مقالات</h3>
+      <ul>
+        <li class="active"><a href="#tabs-1">ایرانیتال</a></li>
+        <li><a href="#tabs-2">آموزشی</a></li>
+        <li><a href="#tabs-3">اخبار</a></li>
+      </ul>
+    </div>
+  <div class="tab-doc" id="tabs-1">
+      <div class="tab-doc-img">
+          <img src="Untitled.jpg">
+          <h4 class="img-title">بیت کوین</h4>
+      </div>
+      <div class="tab-doc-con">
+         <h5>مخالفت با ارزهای دیجیتال در مجلس جدی شد</h5>
+         <p>محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب </p>
+        <h6>
+            نویسنده
+            <span class="dott">.</span>
+            تاریخ
+            <span class="dott">.</span>
+            نظرات
+        </h6>
+            
+        </div>  
+</div>
+  <div class="tab-doc" id="tabs-2">
+    <div class="tab-doc-img">
+      <img src="Untitled.jpg">
+      <h4 class="img-title">آموزشی</h4>
+  </div>
+  <div class="tab-doc-con">
+     <h5>عنوان</h5>
+     <p>محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب </p>
+    <h6>
+        نویسنده
+        <span class="dott">.</span>
+        تاریخ
+        <span class="dott">.</span>
+        نظرات
+    </h6>
+        
+    </div>   
+  </div>
+  <div class="tab-doc" id="tabs-3">
+    <div class="tab-doc-img">
+      <img src="Untitled.jpg">
+      <h4 class="img-title">اخبار</h4>
+  </div>
+  <div class="tab-doc-con">
+     <h5>عنوان</h5>
+     <p>محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب محتوای تب </p>
+    <h6>
+        نویسنده
+        <span class="dott">.</span>
+      تاریخ
+        <span class="dott">.</span>
+       نظرات
+    </h6>
+        
+    </div>  
+  </div>
+</div>
+ 
+ 
+</body>
+</html>
